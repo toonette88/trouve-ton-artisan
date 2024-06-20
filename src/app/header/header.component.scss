@@ -1,0 +1,32 @@
+.navbar{
+    background-color: #f1f8fc;
+}
+
+.search_input{
+    margin:10px;
+}
+
+button{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 13px;
+    width: 75px;
+    
+    justify-content: center;
+    color: #0074c7;
+   
+}
+
+.search{
+    position: absolute;
+    top: 30px;
+    right:130px;
+}
+
+
+.navbar-toggler-icon{
+    width: 65px;
+    height: 70px;
+    margin:-18px
+}
