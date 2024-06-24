@@ -1,0 +1,14 @@
+
+<div class="row row-cols-1 row-cols-md-3 pgi-4">
+    <div class="col" *ngFor=" let artisan of (artisans | filterByName: searchText)">
+        <div class="card">   
+            <div class="card-body">
+                <h3 class="title card-title ">{{ artisan.name }}</h3>
+                <p class="text card-text">{{ artisan.note }}</p>
+                <p class="text card-text">Spécialité: {{ artisan.specialty }} </p>
+                <p class="text card-text"> Localisation: {{artisan.location}}</p>
+                <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary">En Savoir Plus</a>
+            </div>
+        </div>
+    </div>
+</div>

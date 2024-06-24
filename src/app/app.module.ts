@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { FilterByNamePipe } from './filter-by-name.pipe';
+import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
+import { ArtisanComponent } from './artisan/artisan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    FilterByNamePipe,
+    ArtisanCardComponent,
+    ArtisanComponent
   ],
   imports: [
     BrowserModule,
