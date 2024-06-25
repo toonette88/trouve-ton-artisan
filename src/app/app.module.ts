@@ -11,6 +11,8 @@ import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
 import { ArtisanComponent } from './artisan/artisan.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     ArtisanCardComponent,
     ArtisanComponent,
     CategoryPageComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    ArtisanPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

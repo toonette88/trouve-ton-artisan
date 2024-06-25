@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ArtisansService } from '../artisans.service';
 import { Router } from '@angular/router';
-
+ 
 @Component({
   selector: 'app-category-page',
   templateUrl: './category-page.component.html',

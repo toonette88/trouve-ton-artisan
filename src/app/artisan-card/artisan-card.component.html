@@ -4,7 +4,7 @@
         <div class="card border-primary">   
             <div class="card-body">
                 <h3 class="title card-title ">{{ artisan.name }}</h3>
-                <p class="text card-text">{{ artisan.note }}</p>
+                <p class="text card-text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
                 <p class="text card-text">Spécialité: {{ artisan.specialty }} </p>
                 <p class="text card-text"> Localisation: {{artisan.location}}</p>
                 <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary">En Savoir Plus</a>
