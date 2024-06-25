@@ -1,7 +1,7 @@
 
-<div class="row row-cols-1 row-cols-md-3 pgi-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 p-4">
     <div class="col" *ngFor=" let artisan of (artisans | filterByName: searchText)">
-        <div class="card">   
+        <div class="card border-primary">   
             <div class="card-body">
                 <h3 class="title card-title ">{{ artisan.name }}</h3>
                 <p class="text card-text">{{ artisan.note }}</p>
