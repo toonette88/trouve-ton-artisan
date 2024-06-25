@@ -1,1 +1,20 @@
+<app-header></app-header>
+<main>
+<section>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-4 g-4">
+        <div class="col" *ngFor=" let artisan of (artisansTop)">
+            <div class="card border-primary" >
+                <div class="card-body">
+                    <h3 class="title card-title">{{ artisan.name }}</h3>
+                    <p class="text card-text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
+                    <p class="text card-text"> Spécialité: {{ artisan.specialty }} </p>
+                    <p class="text card-text"> Localisation: {{artisan.location}}</p>
+                    <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary text-center">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<app-footer></app-footer>
 
