@@ -1,20 +1,36 @@
 <app-header></app-header>
-<main>
-<section>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-4 g-4">
-        <div class="col" *ngFor=" let artisan of (artisansTop)">
-            <div class="card border-primary" >
-                <div class="card-body">
-                    <h3 class="title card-title">{{ artisan.name }}</h3>
-                    <p class="text card-text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
-                    <p class="text card-text"> Spécialité: {{ artisan.specialty }} </p>
-                    <p class="text card-text"> Localisation: {{artisan.location}}</p>
-                    <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary text-center">En savoir plus</a>
+<main class="container">
+    <div class="row">
+        <div class="col-md-6 mb-4 d-flex justify-content-center align-items-center">
+            <h1>Trouve ton artisan !</h1>
+        </div>
+        <div class="col-md-5 mb-4">
+            <h2>Comment trouver mon artisan ?</h2>
+            <p>Voici les quatres étapes pour trouver un artisan</p>
+            <ol>
+                <li>Choisir la la catégorie d'artisanat dans le menu.</li>
+                <li>Choisir un artisan.</li>
+                <li>Le contacter via le formulaire de contact.</li>
+                <li>Une réponse sera apportée sous 48h.</li>
+            </ol>
+        </div>
+        <div class="col-12">
+            <h2 class=" text-center">Artisans du mois</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-4 g-4">
+                <div class="col" *ngFor=" let artisan of (artisansTop)">
+                    <div class="card border-primary" >
+                        <div class="card-body">
+                            <h3 class="title card-title">{{ artisan.name }}</h3>
+                            <p class="text card-text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
+                            <p class="text card-text"> Spécialité: {{ artisan.specialty }} </p>
+                            <p class="text card-text"> Localisation: {{artisan.location}}</p>
+                            <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary text-center">En savoir plus</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
 </main>
 <app-footer></app-footer>
 
