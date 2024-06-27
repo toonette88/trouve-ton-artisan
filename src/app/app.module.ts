@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {EventPluginsModule} from '@tinkoff/ng-event-plugins';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,7 @@ import { CategoryPageComponent } from './category-page/category-page.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
 import { RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,15 @@ import { RouterModule } from '@angular/router';
     ArtisanComponent,
     CategoryPageComponent,
     StarRatingComponent,
-    ArtisanPageComponent
+    ArtisanPageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    EventPluginsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

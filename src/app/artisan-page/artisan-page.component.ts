@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
   styleUrl: './artisan-page.component.scss'
 })
 export class ArtisanPageComponent implements OnInit{
+  artisans: any[] = [];
   artisan: any;
-  id: string = "0";
+  id: string = '';
 
   constructor(private route: ActivatedRoute, private artisansServices: ArtisansService, private router: Router) { }
 
@@ -18,9 +19,10 @@ export class ArtisanPageComponent implements OnInit{
   ngOnInit(): void {
     this.route.paramMap.subscribe( params => {
       this.id = params.get('id')!;
-      this.artisan= this.artisan.getArtisansById(this.id);
+      this.artisan = this.artisansServices.getArtisansById(this.id);
     })
   }
+  
 }
 
 

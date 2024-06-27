@@ -1,25 +1,24 @@
 <app-header></app-header>
 <main>
-    <section>
-    <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
-        <div class="col">
-            <div class="card border-primary" *ngIf="artisan">   
-            <div class="card-body">
-                <h3 class="title card-title ">{{ artisan.name }}</h3>
-                <p class="text card-text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
-                <p class="text card-text">Spécialité: {{ artisan.specialty }} </p>
-                <p class="text card-text"> Localisation:{{artisan.location}}</p>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-6" *ngFor="let artisan of artisan">
+                <div class="col-md-6">
+                    <h3 class="title">{{ artisan.name }}</h3>
+                    <p class="text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
+                    <p class="text">Spécialité: {{ artisan.specialty }} </p>
+                    <p class="text"> Localisation:{{artisan.location}}</p>
+                </div>
+                <div class="col-md-6">
+                    <h2> A propos</h2>
+                    <p>{{artisan.about}}</p>
+                </div>   
             </div>
-            <div class="about">
-                <h2> A propos</h2>
-                <p>{{artisan.about}}</p>
+            <div class="col-md-6">
+                <app-contact></app-contact>
             </div>
         </div>
-    </div>
-</div>
-        
-    </section>
-    
+    </div> 
 </main>
 <app-footer></app-footer>
 

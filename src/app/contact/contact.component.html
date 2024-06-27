@@ -1,0 +1,38 @@
+<main>
+  <div class="col">
+      <h3>Formulaire de contact</h3>
+      <p>Pour contacter l'entreprise /artisan, merci de remplir le formulaire ci-dessous.</p>
+      <form  (submit)="onSubmit($event)">
+        <div [formGroup]="form" class="row">
+            <div class="col-md-6">
+              <label for="firstName" id="firstName" class="form-label">Prénom 
+                <input type="text" class="form-control"  aria-label="firstName" formControlName="firstName">
+              </label> 
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" id="lastName" class="form-label">Nom
+                <input type="text" class="form-control"  aria-label="lastName" formControlName="lastName">
+              </label> 
+            </div>
+        </div>
+        <div class="col">
+            <label for="subject" id="subject" class="form-label">Objet
+              <input type="text" class="form-control" id="subject" formControlName="subject">
+            </label> 
+          </div>
+        <div class="col">
+            <label for="email" id="email" class="form-label">Votre email
+             <input type="email" class="form-control" id="email" formControlName="email">
+            </label> 
+          </div>
+        <div class="col">
+            <label for="message" id="message" class="form-label">Votre message
+             <textarea rows="4" cols="50" class="form-control" placeholder="Entrer votre question ou message" id="message" formControlName="message"></textarea>
+            </label> 
+          </div>
+        <button type="submit" class="btn text-light my-3 col">Envoyer</button>
+      </form>
+      <div *ngIf="submit" class="validMessage"> Le message a été envoyé</div>
+
+    </div>    
+</main>
