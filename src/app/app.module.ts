@@ -16,6 +16,10 @@ import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { Page404Component } from './page404/page404.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-personnelles.component';
+import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
+import { CookiesComponent } from './cookies/cookies.component';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { Page404Component } from './page404/page404.component';
     StarRatingComponent,
     ArtisanPageComponent,
     ContactComponent,
-    Page404Component
+    Page404Component,
+    MentionsLegalesComponent,
+    DonneesPersonnellesComponent,
+    AccessibiliteComponent,
+    CookiesComponent
   ],
   imports: [
     BrowserModule,
