@@ -2,22 +2,22 @@
   <div class="col">
       <h3>Formulaire de contact</h3>
       <p>Pour contacter l'entreprise /artisan, merci de remplir le formulaire ci-dessous.</p>
-      <form  (submit)="onSubmit($event)">
-        <div [formGroup]="form" class="row">
+      <form [formGroup]="form"  (submit)="onSubmit($event)">
+        <div  class="row">
             <div class="col-md-6">
-              <label for="firstName" id="firstName" class="form-label">Prénom 
-                <input type="text" class="form-control"  aria-label="firstName" formControlName="firstName">
+              <label for="firstName" class="form-label">Prénom 
+                <input type="text"  id="firstName" class="form-control"  aria-label="firstName" formControlName="firstName">
               </label> 
             </div>
             <div class="col-md-6">
-              <label for="lastName" id="lastName" class="form-label">Nom
-                <input type="text" class="form-control"  aria-label="lastName" formControlName="lastName">
+              <label for="lastName"  class="form-label">Nom
+                <input type="text" id="lastName" class="form-control"  aria-label="lastName" formControlName="lastName">
               </label> 
             </div>
         </div>
         <div class="col">
-            <label for="subject" id="subject" class="form-label">Objet
-              <input type="text" class="form-control" id="subject" formControlName="subject">
+            <label for="subject"  class="form-label">Objet
+              <input type="text"  id="subject" class="form-control" id="subject" formControlName="subject">
             </label> 
           </div>
         <div class="col">

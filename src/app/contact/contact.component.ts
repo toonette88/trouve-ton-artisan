@@ -20,6 +20,7 @@ export class ContactComponent {
     onSubmit(event: any): void{
       event.preventDefault();
       this.submit= true;
+      this
       this.form.setValue(
         {
           firstname:'',
