@@ -20,6 +20,9 @@ export class ArtisansService {
     getArtisansBySpecialty(specialty: string) {
       return this.artisans.filter(artisan => artisan.specialty.toLowerCase() ===specialty.toLowerCase())
     }
+    getArtisansById(id: string){
+      return this.artisans.filter(artisan => artisan.id.toLowerCase() ===id.toLowerCase())
+    }
 }
 
 

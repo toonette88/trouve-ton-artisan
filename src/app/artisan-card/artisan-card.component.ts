@@ -9,7 +9,7 @@ import { ArtisansService } from '../artisans.service';
 export class ArtisanCardComponent {
 
 //APPEL DU TABLEAU DES ARTISANS
-artisans: any[] = [];
+artisans: any[] = [] ;
 constructor(private artisansService: ArtisansService) {}
 
 ngOnInit(): void {

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,10 @@ import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
 import { ArtisanComponent } from './artisan/artisan.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
+import { RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +27,15 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     ArtisanCardComponent,
     ArtisanComponent,
     CategoryPageComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    ArtisanPageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
