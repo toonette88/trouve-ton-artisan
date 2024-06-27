@@ -2,7 +2,7 @@
   <div class="col">
       <h3>Formulaire de contact</h3>
       <p>Pour contacter l'entreprise /artisan, merci de remplir le formulaire ci-dessous.</p>
-      <form [formGroup]="form"  (submit)="onSubmit($event)">
+      <form [formGroup]="form" (submit)="onSubmit($event)">
         <div  class="row">
             <div class="col-md-6">
               <label for="firstName" class="form-label">Prénom 
@@ -21,13 +21,13 @@
             </label> 
           </div>
         <div class="col">
-            <label for="email" id="email" class="form-label">Votre email
-             <input type="email" class="form-control" id="email" formControlName="email">
+            <label for="email"  class="form-label">Votre email
+             <input type="email" id="email" class="form-control" id="email" formControlName="email">
             </label> 
           </div>
         <div class="col">
-            <label for="message" id="message" class="form-label">Votre message
-             <textarea rows="4" cols="50" class="form-control" placeholder="Entrer votre question ou message" id="message" formControlName="message"></textarea>
+            <label for="message"  class="form-label">Votre message
+             <textarea id="message" rows="4" cols="50" class="form-control" placeholder="Entrer votre question ou message" id="message" formControlName="message"></textarea>
             </label> 
           </div>
         <button type="submit" class="btn text-light my-3 col">Envoyer</button>

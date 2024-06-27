@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl} from '@angular/forms';
+import { FormGroup, FormControl, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +8,7 @@ import { FormGroup, FormControl} from '@angular/forms';
 })
 export class ContactComponent {
     submit: boolean=false;
-    
+  
     form: FormGroup = new FormGroup({
       firstName: new FormControl(''),
       lastName: new FormControl(''),
@@ -20,16 +20,7 @@ export class ContactComponent {
     onSubmit(event: any): void{
       event.preventDefault();
       this.submit= true;
-      this
-      this.form.setValue(
-        {
-          firstname:'',
-          lastName:'',
-          email:'',
-          subject:'',
-          message:''
-        }
-      )   
+      this.form.reset();
     }
   }
 

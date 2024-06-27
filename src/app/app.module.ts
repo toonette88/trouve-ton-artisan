@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {EventPluginsModule} from '@tinkoff/ng-event-plugins';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +15,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +35,6 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    EventPluginsModule,
     ReactiveFormsModule
   ],
   providers: [],
