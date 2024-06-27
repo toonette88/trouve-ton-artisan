@@ -1,0 +1,21 @@
+.page404 {
+    display: flex;
+    background-color: white;
+    background-size: contain;
+    padding: 4%;
+    border-radius: 10%;
+    width: 80vw;
+  }
+  
+  p {
+    font-size:2em;
+    font-weight: 500;
+  }
+    figure {
+    align-self: end;
+    width: 50%;
+    
+  
+    & img {
+      width: 100%;
+    }}

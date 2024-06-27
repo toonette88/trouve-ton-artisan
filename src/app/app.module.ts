@@ -15,6 +15,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
+import { Page404Component } from './page404/page404.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ContactComponent } from './contact/contact.component';
     CategoryPageComponent,
     StarRatingComponent,
     ArtisanPageComponent,
-    ContactComponent
+    ContactComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
