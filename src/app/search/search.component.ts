@@ -14,6 +14,7 @@ export class SearchComponent implements OnInit{
   artisans2: any[] = [];
   artisans3: any[] = [];
   search: string='';
+  noArtisans: any;
 
  constructor(private route: ActivatedRoute, private artisansServices: ArtisansService, private router: Router) { }
 

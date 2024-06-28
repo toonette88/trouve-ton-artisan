@@ -19,8 +19,9 @@ const routes: Routes = [
   {path: "donneespersonnelles", component: DonneesPersonnellesComponent},
   {path: "accessibilite", component: AccessibiliteComponent},
   {path: "cookies", component: CookiesComponent},
+  {path: "search/:search", component: SearchComponent},
   {path: "**", pathMatch:'full', component: Page404Component},
-  {path: "search/:search", component: SearchComponent} 
+  
 ];
 
 @NgModule({
