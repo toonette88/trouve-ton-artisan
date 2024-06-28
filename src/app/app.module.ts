@@ -7,9 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { FilterByNamePipe } from './filter-by-name.pipe';
-import { ArtisanCardComponent } from './artisan-card/artisan-card.component';
-import { ArtisanComponent } from './artisan/artisan.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { ArtisanPageComponent } from './artisan-page/artisan-page.component';
@@ -20,6 +17,8 @@ import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.co
 import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-personnelles.component';
 import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
 import { CookiesComponent } from './cookies/cookies.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -28,9 +27,6 @@ import { CookiesComponent } from './cookies/cookies.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    FilterByNamePipe,
-    ArtisanCardComponent,
-    ArtisanComponent,
     CategoryPageComponent,
     StarRatingComponent,
     ArtisanPageComponent,
@@ -39,13 +35,15 @@ import { CookiesComponent } from './cookies/cookies.component';
     MentionsLegalesComponent,
     DonneesPersonnellesComponent,
     AccessibiliteComponent,
-    CookiesComponent
+    CookiesComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

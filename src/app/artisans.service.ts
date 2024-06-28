@@ -8,19 +8,19 @@ export class ArtisansService {
    artisans = artisansData;
 
   constructor()  {}
-    getArtisansByCategory(category: string) {
+      getArtisansByCategory(category: string) {
       return this.artisans.filter(artisan => artisan.category.toLowerCase() ===category.toLowerCase())
     };
-    getArtisansByName(name: string) {
+      getArtisansByName(name: string) {
       return this.artisans.filter(artisan => artisan.name.toLowerCase() ===name.toLowerCase())
     };
-    getArtisansByLocation(location: string) {
+      getArtisansByLocation(location: string) {
       return this.artisans.filter(artisan => artisan.location.toLowerCase() ===location.toLowerCase())
     };
-    getArtisansBySpecialty(specialty: string) {
+      getArtisansBySpecialty(specialty: string) {
       return this.artisans.filter(artisan => artisan.specialty.toLowerCase() ===specialty.toLowerCase())
     }
-    getArtisansById(id: string){
+      getArtisansById(id: string){
       return this.artisans.filter(artisan => artisan.id.toLowerCase() ===id.toLowerCase())
     }
 }
