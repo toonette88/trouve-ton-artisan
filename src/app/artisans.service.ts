@@ -1,27 +1,25 @@
 import { Injectable } from '@angular/core';
 import  artisansData from '../assets/datas.json';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArtisansService {
    artisans = artisansData;
+   private artisanUrl: string = "assets/datas.json"
 
-  constructor()  {}
+  constructor(private https: HttpClient)  {}
+
       getArtisansByCategory(category: string) {
       return this.artisans.filter(artisan => artisan.category.toLowerCase() ===category.toLowerCase())
     };
-      getArtisansByName(name: string) {
-      return this.artisans.filter(artisan => artisan.name.toLowerCase() ===name.toLowerCase())
-    };
-      getArtisansByLocation(location: string) {
-      return this.artisans.filter(artisan => artisan.location.toLowerCase() ===location.toLowerCase())
-    };
-      getArtisansBySpecialty(specialty: string) {
-      return this.artisans.filter(artisan => artisan.specialty.toLowerCase() ===specialty.toLowerCase())
-    }
       getArtisansById(id: string){
       return this.artisans.filter(artisan => artisan.id.toLowerCase() ===id.toLowerCase())
+    }
+    getArtisan(): Observable<any> {
+      return this.https.get(this.artisanUrl)
     }
 }
 
