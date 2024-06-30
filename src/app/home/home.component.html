@@ -24,7 +24,7 @@
                             <p class="text card-text"><app-star-rating [rating]=artisan.note></app-star-rating></p>
                             <p class="text card-text"> Spécialité: {{ artisan.specialty }} </p>
                             <p class="text card-text"> Localisation: {{artisan.location}}</p>
-                            <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary text-center">En savoir plus</a>
+                            <button [routerLink]="['/artisan', artisan.id]" class="btn btn-primary text-center">En savoir plus</button>
                         </div>
                     </div>
                 </div>

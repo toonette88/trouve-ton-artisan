@@ -9,6 +9,7 @@ import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.co
 import { DonneesPersonnellesComponent } from './donnees-personnelles/donnees-personnelles.component';
 import { AccessibiliteComponent } from './accessibilite/accessibilite.component';
 import { CookiesComponent } from './cookies/cookies.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {path:"", component:HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: "donneespersonnelles", component: DonneesPersonnellesComponent},
   {path: "accessibilite", component: AccessibiliteComponent},
   {path: "cookies", component: CookiesComponent},
+  {path: "search/:search", component: SearchComponent},
   {path: "**", pathMatch:'full', component: Page404Component},
   
 ];
