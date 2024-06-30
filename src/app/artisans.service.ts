@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ArtisansService {
    artisans = artisansData;
-   private artisanUrl: string = "assets/datas.json"
+   private artisanUrl: string = "../assets/datas.json"
 
   constructor(private https: HttpClient)  {}
 

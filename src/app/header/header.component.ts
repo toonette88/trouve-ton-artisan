@@ -7,6 +7,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
- search: any;
-
+search: string=''
 }

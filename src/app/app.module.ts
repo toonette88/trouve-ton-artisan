@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,8 @@ import { AccessibiliteComponent } from './accessibilite/accessibilite.component'
 import { CookiesComponent } from './cookies/cookies.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
+import { FilterArtisansPipe } from './filter-artisans.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,13 +40,16 @@ import { SearchComponent } from './search/search.component';
     AccessibiliteComponent,
     CookiesComponent,
     SearchComponent,
+    FilterArtisansPipe,
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
